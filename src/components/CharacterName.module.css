@@ -1,0 +1,15 @@
+.CharacterName {
+  position: relative;
+  font-size: var(--font-size-character-name-basic);
+  text-align: center;
+}
+.CharacterName h2::after {
+  content: "";
+  width: 87px;
+  height: 5px;
+  background-color: var(--color-character-name-after);
+  display: inline-flex;
+  position: absolute;
+  left: 3px;
+  top: calc(100% - 15px);
+}

@@ -12,7 +12,6 @@
   --color-character-name-placeholder: rgb(0, 0, 0, .1);
   --color-character-name-after: #F7391C;
  }
-
  @font-face {
   font-family: 'Inter';;
   src: url('./fonts/Inter.ttf');
@@ -26,26 +25,6 @@ body {
   background-position: left 50px top;
   background-repeat: no-repeat;
 }
-.placeholder-container {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-.character-name-placeholder {
-  color: var(--color-character-name-placeholder);
-  font-size: 300px;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  white-space: nowrap;
-  position: absolute;
-  left: 0;
-  right: 0;
-}
 .asset {
   writing-mode: vertical-rl;
   display: flex;
@@ -54,7 +33,7 @@ body {
 }
 .asset.top {
   grid-area: asset-top;
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
 }
 .asset.bottom {
   grid-area: asset-bottom;
@@ -114,27 +93,8 @@ body {
   max-width: 100%;
   border-radius: 50%;
 }
-.character-label {
-  background: var(--bg-character-label);
-  padding: 1em;
-  color: var(--color-character-label);
-  border-radius: 10px;
-}
-.character-name {
-  position: relative;
-  font-size: var(--font-size-character-name-basic);
-  text-align: center;
-}
-.character-name h2::after {
-  content: '';
-  width: 87px;
-  height: 5px;
-  background-color: var(--color-character-name-after);
-  display: inline-flex;
-  position: absolute;
-  left: 3px;
-  top: calc(100% - 15px);
-}
+
+
 .arrow {
   grid-area: arrow;
   height: 50px;
@@ -170,22 +130,10 @@ body {
 .navigation.about {
   grid-area: about;
 }
-.character-name-container {
-  grid-area: character-name;
-  margin-top: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .character-description-container { 
   grid-area: character-description;
 }
-.character-image-container {
-  grid-area: avatar;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 @media screen and (min-width: 1024px) {
   body {
     background-position: left 200px top;
@@ -195,9 +143,6 @@ body {
   }
   .learn-more {
     display: flex;
-  }
-  .character-name-container {
-    justify-content: start;
   }
   .arrow {
     background-position: left;

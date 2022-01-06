@@ -1,0 +1,24 @@
+.characterNameArea {
+  grid-area: character-name;
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.characterImageArea{
+  grid-area: avatar;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.characterDescriptionArea { 
+  grid-area: character-description;
+}
+
+@media screen and (min-width: 1024px) {
+  .characterNameArea {
+    justify-content: start;
+  }
+}

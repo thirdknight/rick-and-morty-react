@@ -1,0 +1,6 @@
+.characterLabel {
+  background: var(--bg-character-label);
+  padding: 1em;
+  color: var(--color-character-label);
+  border-radius: 10px;
+}
