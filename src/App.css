@@ -73,41 +73,26 @@ body {
   display: block;
 }
 
-.grid {
-  position: relative;
-  z-index: 2;
-  display: grid;
-  margin: 0 auto;
-  padding: 2em;
-  column-gap: 1em;
-  grid-template-columns: 50px 1fr;
-  grid-template-rows: repeat(6, auto);
-  grid-template-areas: "logo logo"
-                        "name avatar"
-                        "name character-name"
-                        "about character-description"
-                        "arrow arrow"
-                        "social social"                        
-}
 
 
 
-.arrow {
+
+/* .arrow {
   grid-area: arrow;
   height: 50px;
   background-image: url('./images/arrow.svg');
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-}
-.social {
+} */
+/* .social {
   grid-area: social;
   margin-top: 2em;
   text-align: center;
 }
 .social a {
   text-transform: none;
-}
+} */
 .navigation {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
@@ -141,10 +126,10 @@ body {
   .learn-more {
     display: flex;
   }
-  .arrow {
+  /* .arrow {
     background-position: left;
-  }
-  .grid {
+  } */
+  /* .grid {
     column-gap: 4em;
     grid-template-columns: 50px 1fr 1fr 200px;
     grid-template-rows: 230px 200px 1fr 1fr;
@@ -152,5 +137,5 @@ body {
                           "name character-name avatar avatar"
                           "about character-description avatar avatar"
                           "asset-bottom learn-more arrow other-line" 
-  }
+  } */
 }

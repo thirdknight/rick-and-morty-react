@@ -1,0 +1,13 @@
+.next {
+  height: 50px;
+  background-image: url('../images/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .next {
+    background-position: left;
+  }
+}

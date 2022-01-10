@@ -1,4 +1,20 @@
-.characterNameArea {
+.grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  margin: 0 auto;
+  padding: 2em;
+  column-gap: 1em;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "logo logo"
+                        "name avatar"
+                        "name character-name"
+                        "about character-description"
+                        "arrow arrow"
+                        "social social"                        
+}
+.nameArea {
   grid-area: character-name;
   margin-top: 1em;
   display: flex;
@@ -6,19 +22,37 @@
   justify-content: center;
 }
 
-.characterImageArea{
+.imageArea{
   grid-area: avatar;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.characterDescriptionArea { 
+.descriptionArea { 
   grid-area: character-description;
 }
 
+.nextArea {
+  grid-area: arrow;
+}
+.socialArea {
+  grid-area: social;
+  margin-top: 2em;
+  text-align: center;
+}
+
 @media screen and (min-width: 1024px) {
-  .characterNameArea {
+  .grid {
+    column-gap: 4em;
+    grid-template-columns: 50px 1fr 1fr 200px;
+    grid-template-rows: 230px 200px 1fr 1fr;
+    grid-template-areas: "asset-top logo logo social"
+                          "name character-name avatar avatar"
+                          "about character-description avatar avatar"
+                          "asset-bottom learn-more arrow other-line" 
+  }
+  .nameArea {
     justify-content: start;
   }
 }
