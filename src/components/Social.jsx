@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 export default function Social() {
   return (
     <div className={styles.social}>
-      <a href="https://github.com/thirdknight/rick-and-morty-vanilla-js">
+      <a href="https://github.com/thirdknight/rick-and-morty-react">
         <IconContext.Provider
           value={{ color: "black", size: "42px" }}
           alt="github"

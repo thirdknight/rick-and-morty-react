@@ -12,8 +12,7 @@ export default function Next() {
 
   async function handleClick() {
     NProgress.start()
-    history.push(`/${context.character.id + 1}`)
-    // context.setCharacter(await api.getCharacter(context.character.id + 1))
+    history.push(`${process.env.PUBLIC_URL}/${context.character.id + 1}`)
     NProgress.done()
   }
   return(
