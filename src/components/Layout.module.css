@@ -38,10 +38,42 @@
 }
 .socialArea {
   grid-area: social;
-  margin-top: 2em;
-  text-align: center;
+  
 }
-
+.logoArea {
+  grid-area: logo;
+}
+.learnMoreArea {
+  grid-area: learn-more;
+  
+}
+.verticalAlign {
+  writing-mode: vertical-rl;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+.assetTopArea {
+  grid-area: asset-top;
+}
+.assetBottomArea {
+  grid-area: asset-bottom;
+  grid-area: asset-bottom;
+  justify-content: flex-end;
+}
+.navigationArea {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigationArea.name {
+  grid-area: name;
+}
+.navigationArea.about {
+  grid-area: about;
+}
 @media screen and (min-width: 1024px) {
   .grid {
     column-gap: 4em;
@@ -54,5 +86,8 @@
   }
   .nameArea {
     justify-content: start;
+  }
+  .verticalAlign {
+    display: flex;
   }
 }

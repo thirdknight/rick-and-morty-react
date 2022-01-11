@@ -1,4 +1,7 @@
-
+.social {
+  margin-top: 2em;
+  text-align: center;
+}
 .social a {
   text-transform: none;
 }

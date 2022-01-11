@@ -1,36 +1,40 @@
 import styles from "./Layout.module.css";
 import Social from "./Social";
+import Logo from "./Logo";
+import Dot from "./Dot";
+import Line from "./Line";
+import LearnMore from "./LearnMore";
+import NavigationItem from "./NavigationItem";
 
 export default function Layout({ name, image, description, next }) {
   return (
     <div className={styles.grid}>
-      <span className="asset top">
-        <span className="dot"></span>
-        <span className="dot"></span>
-        <span className="dot"></span>
-        <span className="dot"></span>
-        <span className="line"></span>
+      <span className={`${styles.verticalAlign} ${styles.assetTopArea}`}>
+        <Dot />
+        <Dot />
+        <Dot />
+        <Line />
       </span>
-      <img className="logo"
-        src="http://rick-and-morty-vanilla-js.edinsonningles.com/public/logo@2x.png"
-        width="280"
-        alt="logo"/>
+      <div className={styles.logoArea}><Logo /></div>
+      
       <div className={styles.socialArea}><Social /></div>
-      <div className="navigation name"><a href="#">Name</a></div>
+      {/* <div className="navigation name"><a href="#">Name</a></div> */}
+      <div className={`${styles.navigationArea} ${styles.name}`}><NavigationItem url="#" text="Name" /></div>
+      
       <div className={styles.nameArea}>{name}</div>
       <div className={styles.imageArea}>{image}</div>
 
-      <div className="navigation about"><a href="#">About</a></div>
+      <div className={`${styles.navigationArea} ${styles.about}`}><NavigationItem url="#" text="About"/></div>
       <div className={styles.descriptionArea}>{description}</div>
 
-      <span className="asset bottom">
-        <span className="line"></span>
-        <span className="dot"></span>
-        <span className="dot"></span>
-        <span className="dot"></span>
+      <span className={`${styles.verticalAlign} ${styles.assetBottomArea}`}>
+        <Line />
+        <Dot />
+        <Dot />
+        <Dot />
       </span>
-      <div className="learn-more">
-        <span>learn more</span>
+      <div className={styles.learnMore}>
+        <LearnMore />
       </div>
       <div className={styles.nextArea}>{next}</div>
     </div>
