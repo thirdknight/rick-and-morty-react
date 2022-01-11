@@ -18,7 +18,7 @@ export default function Layout({ name, image, description, next }) {
       <div className={styles.logoArea}><Logo /></div>
       
       <div className={styles.socialArea}><Social /></div>
-      {/* <div className="navigation name"><a href="#">Name</a></div> */}
+      
       <div className={`${styles.navigationArea} ${styles.name}`}><NavigationItem url="#" text="Name" /></div>
       
       <div className={styles.nameArea}>{name}</div>
